@@ -1,0 +1,41 @@
+.cpHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #fff;
+    border-radius: 10px;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    padding: 12px 24px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(5px);
+}
+button:hover{
+    border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+buttonactive:active {
+    transform: translateY(0);
+  }

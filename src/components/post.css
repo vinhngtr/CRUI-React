@@ -1,0 +1,58 @@
+.cpPost{
+    width: calc((100% - 80px) / 5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(249, 246, 246, 0.1) 30%,
+        rgba(255, 255, 255, 0.2)  60%
+      );
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    
+}
+.cpPost .author{
+  height: 48px;
+}
+.cpPost hr{
+  display: block;
+  width: 100%;
+}
+.cpPost:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.15) 30%,
+      rgba(0, 0, 0, 0.25) 60%
+    );
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+.action{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.action button{
+    width: calc(50% - 10px);
+}
+.text{
+    font-size: 15px;
+    height: 50px;
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    line-clamp: 2;  
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;  
+    white-space: normal; /* Cho phép xuống dòng */
+}
